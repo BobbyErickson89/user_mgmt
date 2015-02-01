@@ -3,10 +3,14 @@ var firstName = document.querySelector('.first-name');
 var lastName = document.querySelector('.last-name');
 var email = document.querySelector('.email');
 var form = document.querySelector('form');
+// EMPTY DIV THAT IS ALREADY IN THE HTML
+var currentDiv = document.querySelector(".names-added-container");
 
 // VARIABLES FOR STORING OBJECTS
 var userStore = ObjectStore();
 var test = userStore.query();
+
+
 
 // var makeElement = document.createElement
 
@@ -20,11 +24,22 @@ function addUser() {
 
   // STORING THE OBJECT IN OBJECT STORE
   userStore.add(User(newUser));
-  console.log(newUser)
+  console.log(newUser);
 
-  
 
-  console.log(test);
+
+  // CREATING NEW ELEMENT TO ADD TO HTML
+  var newDiv = document.createElement("div"); //creating a new div container
+  var newContent = document.createTextNode(newUser.firstName + ' ' + newUser.lastName); //making object value into text
+  newDiv.appendChild(newContent); //adding the object value inside newDiv
+
+  currentDiv.appendChild(newDiv);
+
+
+  // var currentDiv = document.querySelector(".names-added-container"); //div that is alread in HTML
+  // document.body.insertBefore(newDiv, currentDiv) //adding newDiv inside already existing div in HTML
+
+
 
 
 

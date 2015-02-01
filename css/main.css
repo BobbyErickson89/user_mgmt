@@ -37,3 +37,9 @@ label {
   padding: 0.5em;
   font-size: 1em;
 }
+
+.names-added-container {
+  text-align: center;
+  background: blue;
+  color: white;
+}
