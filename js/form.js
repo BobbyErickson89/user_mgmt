@@ -29,12 +29,26 @@ function addUser() {
 
 
   // CREATING NEW ELEMENT TO ADD TO HTML
-  var newDiv = document.createElement("div"); //creating a new div container
-  var newContent = document.createTextNode(newUser.firstName + ' ' + newUser.lastName); //making object value into text
-  newDiv.appendChild(newContent); //adding the object value inside newDiv
+  var newDiv = document.createElement('div'); //creating a new div container
+  var newSpan1 = document.createElement('span'); //creating a new span for user's name
+  var newSpan2 = document.createElement('span'); //creating a new span for email
+
+  var newFullName = document.createTextNode(newUser.firstName + ' ' + newUser.lastName);
+  var newEmail = document.createTextNode(newUser.email);
+  //turning names in object value into text
+
+  newDiv.appendChild(newSpan1); //adding newSpan1 inside newDiv
+  newDiv.appendChild(newSpan2); //adding newSpan2 inside newDiv
+
+  newSpan1.appendChild(newFullName); //adding newFullName into newSpan1
+  newSpan2.appendChild(newEmail); //adding newEmail into newSpan2
+
+  newSpan2.setAttribute('style', 'float:right;'); //floats the email addrest that
+  // we placed in newSpan2 to the right
 
 
-  currentDiv.appendChild(newDiv);
+  currentDiv.appendChild(newDiv); //adding the newDiv into the already
+                                  // existing one in HTML
 
 
   // var currentDiv = document.querySelector(".names-added-container"); //div that is alread in HTML
