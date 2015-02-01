@@ -38,8 +38,20 @@ label {
   font-size: 1em;
 }
 
-.names-added-container {
-  text-align: center;
-  background: blue;
-  color: white;
+.names-added-container div{
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2px;
+
+  border: solid 2px black;
+
+  padding: 10px;
+
+  background: gray;
+
+}
+
+.new-email {
+  float: right;
 }

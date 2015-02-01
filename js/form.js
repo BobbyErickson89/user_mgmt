@@ -33,6 +33,7 @@ function addUser() {
   var newContent = document.createTextNode(newUser.firstName + ' ' + newUser.lastName); //making object value into text
   newDiv.appendChild(newContent); //adding the object value inside newDiv
 
+
   currentDiv.appendChild(newDiv);
 
 
