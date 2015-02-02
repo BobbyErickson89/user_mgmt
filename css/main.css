@@ -1,11 +1,14 @@
 body {
   font-family: sans-serif;
   font-size: 1em;
+  background-image: url("http://www.desktop-image.com/wp-content/uploads/2014/07/hd-city-desktop-backgrounds2.jpg");
+  blur: 20%;
 }
 
 h1 {
   font-size: 2em;
   margin-bottom: 1em;
+  text-shadow: black 1px 1px;
 }
 
 input {
@@ -13,23 +16,38 @@ input {
   margin-bottom: 0.5em;
 }
 
+.add-user-header {
+  text-align: center;
+  margin-top: 2em;
+  color: white;
+
+}
+
 .submit-button {
   padding: 1em;
   border-style: none;
   border-radius: 5px;
-  background: #248ABD;
-  color: white;
+  background: #A7E9FF;
+  color: #519AB6;
+  opacity: 1;
 }
 
-label {
-
-}
 
 .form-container {
-  width: 200px;
+  width: 500px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.form {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  color: white;
+  text-shadow: black 1px 1px;
 }
 
 .form-container input{
@@ -50,8 +68,11 @@ label {
   padding: 10px;
 
   background: gray;
-
 };
+
+.first-name .last-name .email {
+  color: #9F9F9F;
+}
 
 
 

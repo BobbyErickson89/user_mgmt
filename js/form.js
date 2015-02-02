@@ -76,5 +76,5 @@ function addUser() {
 form.addEventListener('submit', function(e) {
   e.stopPropagation();
   e.preventDefault();
-  addUser();
+  addUser(); //running 'addUser function'
 });
